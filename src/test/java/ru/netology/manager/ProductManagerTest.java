@@ -56,7 +56,6 @@ class ProductManagerTest {
                 new Book(3, "Lord Of The Rings", 5000, "J.R.R. Tolkien"),
                 new Book(4, "Harry Potter", 400, "J.K. Rowing"),
         };
-
         Product[] actual = repository.findAll();
         assertArrayEquals(expected, actual);
     }
@@ -72,7 +71,6 @@ class ProductManagerTest {
                 new Book(4, "Harry Potter", 400, "J.K. Rowing"),
                 new Smartphone(5, "Nokia 3310", 9999, "Nokia"),
                 new Book(6,"Atlas", 2999, "Various Authors"),
-
         };
         manager.add(new Smartphone(5, "Nokia 3310", 9999, "Nokia"));
         manager.add(new Book(6,"Atlas", 2999, "Various Authors"));
@@ -90,7 +88,6 @@ class ProductManagerTest {
                 new Book(3,"Lord Of The Rings", 5000, "J.R.R. Tolkien"),
                 new Book(4, "Harry Potter", 400, "J.K. Rowing"),
                 new Smartphone(5, "Nokia 3310", 9999, "Nokia"),
-
         };
         manager.add(new Smartphone(5, "Nokia 3310", 9999, "Nokia"));
         Product[] actual = repository.findAll();
