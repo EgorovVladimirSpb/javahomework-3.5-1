@@ -50,7 +50,6 @@ class ProductManagerTest {
     @Test
     void shouldAddNone() {
         ProductRepository repository = new ProductRepository();
-        ProductManager manager = new ProductManager(repository);
         Product[] expected = {
                 new Smartphone(1, "Iphone 12", 99999, "Apple"),
                 new Smartphone(2, "Galaxy S20", 59999, "Samsung"),
